@@ -101,6 +101,10 @@ def check():
 def update():
     return render_template('update.html')
 
+@app.route('/update_detail')
+def update_detail():
+    return render_template('update_detail.html')
+
 @app.route('/check_detail')
 def check_detail():
     return render_template('check_detail.html')
