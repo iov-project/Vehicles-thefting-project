@@ -20,13 +20,15 @@
              <div class="col-md-7">
                  <div class="card mt-100">
                      <div class="card-body">
-                         <form class="form" method="post" action="/add_user">
+                         <form class="form" method="POST" action="{{url_for('check')}}">
                              <p><b>""Buy the car you want, drive the road you want.""</b></p><br>
                              <label>Authentic Number</label><br>
                              <input type="text" class="form-control" name="number"><br>
-                             <a class="me-3 py-2 btn btn-outline-primary link-body-emphasis text-dark" href="/check_detail">Check Detail</a>
+                             <input type="submit" class="btn btn-primary" value="Check_detail">
+                             <!--<a class="me-3 py-2 btn btn-outline-primary link-body-emphasis text-dark" href="/check_detail">Check Detail</a> -->
                          </form>
                      </div>
+                    {% include "includes/message.html"%}
                  </div>
              </div>
         </div>

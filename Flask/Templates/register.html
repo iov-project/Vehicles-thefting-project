@@ -11,7 +11,7 @@
 <!--    <nav>-->
 <!--       <a href="" class="navbar-brand " >Authentication</a>-->
 <!--    </nav>-->
-
+{% include "includes/message.html"%}
     <div class="container">
         <div class="row">
              <div class="col-md-7">
@@ -20,10 +20,11 @@
              <div class="col-md-5">
                  <div class="card mt-100">
                      <div class="card-body">
-                         <form class="form" method="post" action="/add_user">
+                      
+                         <form class="form" method="post" action="/register">
                              <label>Name</label><br>
                              <input type="text" class="form-control" name="name">
-                             <lebel>Email</lebel>
+                             <label>Email</label>
                              <input type="email" class="form-control" name="email">
                              <label>Password</label>
                              <input type="password" class="form-control" name="password"><br>
