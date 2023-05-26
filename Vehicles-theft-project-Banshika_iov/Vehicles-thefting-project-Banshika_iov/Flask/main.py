@@ -20,7 +20,7 @@ app=Flask(__name__)
 app.secret_key=os.urandom(24)
 
 #app.config['MONGO_DBNAME'] = 'test'
-app.config['MONGO_URI'] = f"mongodb+srv://Authentication_User4:AuthenticationUser1234@cluster0.dylrtop.mongodb.net/Project"
+app.config['MONGO_URI'] = f"mongodb+srv://Authentication_User4:{password}@cluster0.dylrtop.mongodb.net/Project"
 mongo = PyMongo(app)
 #...............................................................................................................
 
